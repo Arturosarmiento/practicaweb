@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Creado por Arturo el dia 23-1-17 y es un ejercicio practico para la evaluacion uf1302 -->
+<head>
+	<title>Vídeos y sonidos</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="vídeo y sonidos">
+	<meta name="keywords" content="Ejercicio, Lorem">
+	<meta name="author" content="Arturo">
+	<meta name="robots" content="all">
+	<meta name="programa usado" content="Sublime text3">
+</head>
+<body>
+	<div>
+		<nav>
+			<a href="index.html">Inicio</a><br>
+			<a href="download.html">Download</a><br>
+			<a href="img.html">Imagenes</a><br>
+			<a href="#">Vídeos y sonidos</a><br>
+		</nav>
+	</div>
+	<!-- He añadido el navegador para que puedas volver o ir directamente a otro -->
+	<audio loop controls>
+		<source src="../multimedia/soaring_spirit.ogg">
+		<source src="../multimedia/soaring_spirit.mp3">
+		<object type="audio/x-ogg" data="../multimedia/soaring_spirit.ogg" width="290" height="45">
+			<param name="src" value="../multimedia/soaring_spirit.ogg">
+			<param name="autoplay" value="false">
+			<param name="autoStart" value="0">
+			<p><a href="../multimedia/soaring_spirit.ogg">Si usas safari te descargas el audio.</a></p>
+		</object>
+	</audio>
+	<br>
+	<video loop controls>
+		<source src="../multimedia/developer_stories.ogv">
+		<source src="../multimedia/developer_stories.mp4">
+		<source src="../multimedia/developer_stories.webm">
+		<track kind="captions" src="video/captions/videos01.vtt" srclang="es" label="Español">
+		<!-- aqui he intentado poner subtitulos pero no lo he conseguido -->
+		<object type="video/ogv" data="../multimedia/developer_stories.ogv" width="320" height="240">
+			<param name="src" value="../multimedia/developer_stories.ogv">
+			<param name="autoplay" value="false">
+			<param name="autoStart" value="0">
+		<p><a href="../multimedia/developer_stories.ogv">Si usas safari te descargas el video.</a></p>
+		</object>
+		<!-- no consegui hacer que se vea en safari, ni el audo que se escuchara. Asi que puse los links -->
+	</video>
+</body>
+</html>
